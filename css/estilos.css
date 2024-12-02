@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.hero, header, footer, main .section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.menu-button {
+  display: none;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.menu-button:focus {
+  outline: none;
+}
+.menu-button.active + ul {
+  display: block;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.hero .cta {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.hero .cta:hover {
+  background-color: #555;
+}
+main .section {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  max-width: 1200px;
+}
+main .section h2 {
+  color: #4CAF50;
+  font-weight: 600;
+}
+.neuroprotectores {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.neuroprotectores .card {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  flex: 1 1 calc(30% - 30px);
+  margin: 15px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.podcast-content {
+  text-align: center;
+  padding: 0 15px;
+}
+.podcast-content iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
+.spotify-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1DB954;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.spotify-link:hover {
+  background-color: #17a74b;
+}
+.spotify-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+.social-icons {
+  margin: 10px 0;
+}
+form {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form button:hover {
+  background-color: #45a049;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+  }
+  main .section {
+    padding: 10px;
+    margin: 10px auto;
+  }
+  .hero {
+    padding: 30px 20px;
+  }
+  .podcast-content {
+    padding: 0 10px;
+  }
+}
